@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
 
-public class FavoriteFilms {
+public class FavoriteFilmsTest {
     private static WebDriver driver;
 
     @BeforeClass

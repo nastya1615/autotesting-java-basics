@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-public class BookShop {
+public class BookShopTest {
 
 
     private static WebDriver driver;
