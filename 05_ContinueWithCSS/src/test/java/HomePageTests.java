@@ -26,13 +26,21 @@ public class HomePageTests {
         driver.quit();
     }
 
+    /*Локаторы на главной странице для элемента <a href="" test-info="about-us">О магазине</a>. Осуществите поиск только по атрибуту test-info, равному about-us.*/
     private By element1 = By.cssSelector("[test-info='about-us']");
+    /*Локатор на главной странице для всех элементов с тегом a и с атрибутом href с пустым значением, то есть равным «».*/
     private By element2 = By.cssSelector("a[href='']");
+    /*Локатор на главной странице для элемента <div class="book-price">. Осуществите поиск одновременно по тегу и классу, равному book-price.*/
     private By element3 = By.cssSelector("div[Class='book-price']");
+    /*Локатор на главной странице  для всех элементов с тегом button и с атрибутом class, начинающимся на book.*/
     private By element4 = By.cssSelector("button[class^='book']");
+    /*Локатор на главной странице для всех элементов, у которых атрибут class заканчивается на main.*/
     private By element5 = By.cssSelector("[class$='main']");
+    /*Локатор на главной странице для всех элементов с тегом a и с атрибутом class, содержащим в себе слово menu.*/
     private By element6= By.cssSelector("a[class*='menu']");
+    /*На главной странице найдите все теги div, которые являются дочерними элементами первого уровня у элемента <footer id="footer">.*/
     private By element7 = By.cssSelector("footer#footer> div");
+    /*На главной странице найдите любой тег, который расположен сразу после <li id="genres">.*/
     private By element8 = By.cssSelector("li#genres>*");
 
 

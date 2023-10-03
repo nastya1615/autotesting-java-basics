@@ -25,10 +25,13 @@ public class SearchForLocatorsInYourPersonalAccountTests {
 
         driver.quit();
     }
-
+    /*все теги div, которые являются дочерними элементами первого уровня у элемента <div class="footer__wrapper baseContainer">;*/
     private By element1 = By.cssSelector("div.footer__wrapper.baseContainer > div");
+    /*любой тег, который расположен сразу после <main>;*/
     private By element2 = By.cssSelector("main>*");
+    /*любой тег, который расположен после <h3 class="form-title">Вход в личный кабинет</h3> (необязательно ближайший сосед);*/
     private By element3 = By.cssSelector(".form-wrapper>h3.form-title + *");
+    /*любой тег, который расположен сразу после <div class="footer__contactItem descriptionText">*/
     private By element4 = By.cssSelector(".footer__contacts>.footer__contactItem.descriptionText + *");
 
 

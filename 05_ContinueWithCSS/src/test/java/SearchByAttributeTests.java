@@ -24,14 +24,25 @@ public class SearchByAttributeTests {
 
         driver.quit();
     }
+
+    /*Повторите действия из урока для формы входа в личный кабинет на обновлённой версии сайта клуба любителей весёлых носков: обновите локаторы для элементов,
+    как показано в уроке, не забудьте указать новый адрес сайта.  */
     private By email = By.cssSelector("[data ='email']");
     private By password = By.cssSelector("[data ='password one']");
     private By entrance = By.cssSelector("button#submit.form-submit");
     private By result = By.cssSelector("pre#error.form-error-password-email");
+
+    /*локаторы для элемента <section class="important-section-block" for="main-header-page">.
+    Осуществите поиск только по атрибуту for, равному "main-header-page";*/
     private By mainHeaderPage = By.cssSelector("[for ='main-header-page']");
+    /*локаторы для элемента <input type="text" data="email" placeholder="E-mail" required important>.
+    Осуществите поиск только по атрибуту important;*/
     private By requiredImportant = By.cssSelector("[important = '']");
+    /*локаторы для элемента <h3 class="form-title">Вход в личный кабинет</h3>. Осуществите поиск одновременно по тегу и классу, содержащему текст title;*/
     private By loginToYourPersonalAccount = By.cssSelector("h3[class*='title']");
+    /*локатор для всех элементов с тегом a и с атрибутом href, начинающихся на «mailto:»;*/
     private By mailto = By.cssSelector("[href*='mailto']");
+    /*локатор для всех элементов, у которых атрибут class заканчивается на header.*/
     private By header = By.cssSelector("[class^='header']");
 
 
