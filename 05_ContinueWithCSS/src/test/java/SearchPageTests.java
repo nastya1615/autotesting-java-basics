@@ -29,7 +29,7 @@ public class SearchPageTests {
     /*Локатор на странице поиска для всех элементов с тегом option и с атрибутом selected. Осуществите поиск только по атрибуту selected. */
     private By element1 = By.cssSelector("[selected]");
     /*На странице поиска найдите любые теги, которые расположены после <div class="filter-container"> (необязательно ближайший сосед).*/
-    private By element2 = By.cssSelector(".filter-container >*");
+    private By element2 = By.cssSelector(".filter-container ~*");//Исправила
 
 
 

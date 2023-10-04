@@ -41,7 +41,7 @@ public class HomePageTests {
     /*На главной странице найдите все теги div, которые являются дочерними элементами первого уровня у элемента <footer id="footer">.*/
     private By element7 = By.cssSelector("footer#footer> div");
     /*На главной странице найдите любой тег, который расположен сразу после <li id="genres">.*/
-    private By element8 = By.cssSelector("li#genres>*");
+    private By element8 = By.cssSelector("li#genres + *"); //исправила
 
 
 
